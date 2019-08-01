@@ -1,0 +1,35 @@
+@import './utils/machine.wxss'
+
+.index-hd {
+  padding: 80rpx;
+  text-align: center;
+  padding: 20rpx 26rpx 40rpx;
+}
+
+.index-desc {
+  margin-top: 20rpx;
+  color: #888888;
+  font-size: 28rpx;
+}
+
+.index-tip{
+  color: #888;
+  font-size: 28rpx;
+  text-align: center;
+  margin: 20rpx 0;
+}
+
+button{
+  margin-top: 40rpx;
+  width: 400rpx;
+}
+
+.index-mod{
+  margin: 10rpx 60rpx 10rpx 60rpx;
+  color: #888;
+}
+.index-mod text{
+  display: inline-block;
+  line-height: 20px;
+   font-size: 32rpx;
+}

@@ -1,0 +1,61 @@
+{
+  "name": "wxapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "commitmsg": "validate-commit-msg",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },  
+  "dependencies": {
+    "conventional-changelog": "^1.1.4",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "husky": "^0.14.3",
+    "postcss-calc": "^5.3.1",
+    "postcss-color-function": "^2.0.1",
+    "postcss-extend": "^1.0.5",
+    "postcss-mixins": "^5.4.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-scss": "^0.4.0",
+    "postcss-simple-vars": "^3.0.0",
+    "postcss-strip-inline-comments": "^0.1.5",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "devDependencies": {},
+  "config": {
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "build",
+        "ci",
+        "chore",
+        "revert"
+      ],
+      "scope": {
+        "required": false,
+        "allowed": [
+          "*"
+        ],
+        "validate": false,
+        "multiple": false
+      },
+      "warnOnFail": false,
+      "maxSubjectLength": 1000,
+      "subjectPattern": ".+",
+      "subjectPatternErrorMsg": "subject does not match subject pattern!",
+      "helpMessage": "",
+      "autoFix": false
+    }
+  },  
+  "author": "@pfan",
+  "license": "ISC"
+}

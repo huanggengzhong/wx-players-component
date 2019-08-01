@@ -1,0 +1,31 @@
+<import src="utils/scratch.wxml" />
+
+<view class="index">
+  <view class="index-hd">
+    <view class="index-desc">小程序刮刮乐组件</view>
+  </view>
+
+    <view class="index-mod">
+  	<text>笔触半径</text>	
+          <slider bindchange="canvasRChange" min="2" max="10"  show-value/>
+  </view>   
+
+    <view class="index-mod">
+  	<text>中奖文字大小</text>	
+          <slider bindchange="awardTxtFontSizeChange" min="15" max="30"  show-value/>
+  </view>   
+
+  <view class="index-mod">
+  	<text>画布宽带</text>	
+          <slider bindchange="canvasWidthChage" min="100" max="238" step="2" show-value/>
+  </view>   
+
+    <view class="index-mod">
+  	<text>画布高度</text>	
+          <slider bindchange="canvasHeightChange" min="60" max="100"  show-value/>
+  </view>   
+
+
+  <template is = "scratch" data = "{{scratch, isScroll}}"></template> 
+  <button bindtap = "onStart">{{txt}}</button> 
+</view>

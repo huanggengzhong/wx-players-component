@@ -1,0 +1,9 @@
+<import src="utils/card.wxml" />
+
+<view class="index">
+  <view class="index-hd">
+    <view class="index-desc">小程序九宫格翻纸盘组件</view>
+  </view>
+  <template is = "card" data="{{card}}"></template> 
+  <button bindtap = "onStart">开始抽奖</button> 
+</view>

@@ -1,0 +1,8 @@
+<import src="utils/shake.wxml" />
+
+<view class="index">
+  <view class="index-hd">
+    <view class="index-desc">小程序摇一摇组件。</view>
+  </view>
+  <template is = "shake"  data = "{{anim}}"></template> 
+</view>

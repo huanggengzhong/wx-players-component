@@ -1,0 +1,36 @@
+<import src="utils/machine.wxml" />
+
+<view class="index">
+  <view class="index-hd">
+    <view class="index-desc">小程序老虎机组件</view>
+  </view>
+
+  <view  class="index-mod"  >
+  	 	<text>速度 （指针转动的速度）</text>	
+          <slider bindchange="speedChange" min="24" max="49" show-value/>
+  </view>   
+
+  <view  class="index-mod"  >
+  	 	<text>第一个数值：</text>	
+          <slider bindchange="numChage" data-num= "1" min="0" max="9" show-value/>
+  </view>   
+
+  <view  class="index-mod"  >
+  	 	<text>第二个数值：</text>	
+          <slider bindchange="numChage" data-num= "2" min="0" max="9" show-value/>
+  </view>   
+
+    <view  class="index-mod"  >
+  	 	<text>第三个数值：</text>	
+          <slider bindchange="numChage" data-num= "3" min="0" max="9" show-value/>
+  </view>   
+
+      <view  class="index-mod"  >
+  	 	<text>第四个数值：</text>	
+          <slider bindchange="numChage" data-num= "4" min="0" max="9" show-value/>
+  </view>   
+
+
+ <template is = "machine" data="{{...machine}}"></template> 
+ <button bindtap = "onStart">开始抽奖</button> 
+</view>
