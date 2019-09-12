@@ -1,4 +1,4 @@
-# wxapp-component
+# wx-players-component
 微信小程序大转盘 刮刮乐 老虎机 跑马灯 九宫格 翻纸牌 摇一摇 手势解锁功能组件集合
 
 先看效果:
